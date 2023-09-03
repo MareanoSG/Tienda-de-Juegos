@@ -1,0 +1,474 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background: rgb(3,52,4);
+    background: linear-gradient(-90deg, rgba(68,121,9,1) 0%, rgba(3,52,4,1) 100%);
+
+}
+.caja1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+}
+.encabezado img{
+    width: 130px;
+    margin: 14px;
+    margin-top: 8px;
+    margin-right: 25px;
+}
+.encabezado{
+    width: 75%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    animation: 1s a-enc;
+    margin: 0px;
+
+}
+@keyframes a-enc{
+    0%{
+        opacity: 0%;
+        width: 0px;
+    }
+    50%{
+        opacity: 100%;
+        width: 80%;
+    }
+    100%{
+        opacity: 100%;
+        width: 75%;
+    }
+}@keyframes a-enc2{
+    0%{
+        opacity: 0%;
+    }
+    15%{
+        opacity: 0%;
+        width: 0px;
+    }
+    100%{
+        opacity: 100%;
+        width: 75%;
+    }
+}
+.encabezado nav a{
+    color: white;
+    padding: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 2px;
+    border-radius: 20px;
+    background-color: rgb(53, 53, 53);
+    text-decoration: none;
+    font-family: Righteous;
+    transition: 0.5s font-size ease-in-out, 0.5s background-color ease-in-out;
+    font-size: 14px;
+    animation: 1s a-enc2;
+}
+.encabezado nav a:hover{
+    background-color:rgb(14, 116, 17);
+    font-size: 17px;
+    transition: 0.2s;
+}
+.caja2{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.caja2 .imagen{
+    background-color: rgb(24, 24, 24);
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 75%;
+    background-image: url('img/glitteringcave.jpeg');
+    height: 93%;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-size: 60%;
+    display: block;
+    justify-content: center;
+    animation: 1s a-enc3;
+    
+}
+.caja2 .imagen img{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+@keyframes a-enc3{
+    0%{
+        height: 30%;
+        opacity: 0%;
+    }
+    100%{
+        height: 93%;
+        opacity: 100%;
+    }
+}
+.imagen h2{
+    margin: 40px;
+    width: 35%;
+    font-size: 28px;
+    margin-bottom: 0;
+    color: white;
+    font-family: "Press Start 2P";
+    letter-spacing: 5px;
+}
+.imagen hr{
+    width: 26%;
+    margin: 8px;
+    margin-left: 40px;
+}
+.imagen h4{
+    width: 30%;
+    margin-left: 40px;
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 16px;
+    margin-bottom: 0;
+    color: white;
+    font-family: "Readex Pro";
+}
+.imagen .imgComprar h5{
+    margin-top: 25px;
+    margin-left: 40px;
+    font-size: 20px;
+    color: rgb(55, 134, 18);
+    font-family: "Readex Pro";
+}
+.imagen .imgComprar a{
+    margin-top: 25px;
+    margin-left: 7px;
+    background-color: rgb(32, 32, 32);
+    color: rgb(212, 212, 212);
+    font-family: 'Readex Pro';
+    font-size: 14px;
+    text-decoration: none;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+}
+.imagen .imgComprar a:hover{
+    background-color: rgb(55, 134, 18);
+}
+.imagen .imgComprar{
+    display: flex;
+}
+.tituloGaleria{
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: "Readex Pro";
+    color: white;
+    
+}
+.hrGalerias{
+    width: 95%;
+    display: none;
+    margin: auto;
+}
+.cajaVentas, .cajaNuevos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+#ventas, #nuevos{
+    width: 76%;
+    display: flex;
+}
+.cajaVentas section h1, .cajaNuevos section h1, .cajaVentas section h4, .cajaNuevos section h4{
+    font-family: 'Readex Pro';
+    background-color: rgba(0, 0, 0, 0.37);
+    color: white;
+    padding: 2px;
+}
+.cajaVentas section, .cajaNuevos section{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25%;
+    height: 200px;
+    border-radius: 10px;
+    margin: 6px;
+    transition: 0.2s width ease-in-out, 0.2s background-position ease-in-out;
+    padding: 10px;
+    border: 1px solid white;
+}
+.cajaVentas section:hover, .cajaNuevos section:hover{
+    width: 50%;
+    background-position: bottom;
+    transition: 0.2s;
+}
+.boton-a-tienda{
+    background-color: black;
+    background-color:rgb(14, 116, 17);
+    padding: 5px;
+    color: white;
+    font-family: 'Readex Pro';
+    text-decoration: none;
+    display: none;
+}
+.cajaVentas section:hover .boton-a-tienda, .cajaNuevos section:hover .boton-a-tienda{
+    display: flex;
+}
+.plus{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    width: 40px;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 80px;
+    text-decoration: none;
+    height: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caja4{
+    display: flex;
+    justify-content: center;
+}
+.pie{
+    background: rgb(3,52,4);
+    background: linear-gradient(90deg, rgb(40, 75, 0) 0%, rgb(255, 255, 255) 100%);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    width: 95%;
+}
+footer{
+    display: flex;
+    align-items: center;
+    width: 75%;
+    justify-content: space-between;
+}
+footer h2{
+    margin: 15px;
+    font-size: 15px;
+    color: rgb(32, 32, 32);
+    font-family: Jost;
+}
+footer img{
+    height: 35px;
+}
+
+/* AREA DE SOPORTE Y ACERCA DE*/
+.cajaSoporte, .cajaAcercaDe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.cajaSoporte section, .cajaAcercaDe section{
+    width: 72%;
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
+    padding: 20px;
+}
+.cajaSoporte section h2, .cajaAcercaDe section h2{
+    font-family: "Readex Pro";
+    color: rgb(236, 236, 236);
+}
+.cajaSoporte section h5, .cajaAcercaDe section h5{
+    font-family: "Readex Pro";
+    color: rgb(236, 236, 236);
+
+}
+.cajaSoporte section hr, .cajaAcercaDe section hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cajaSoporte a{
+    background-color: rgba(68,121,9,1);
+    border-radius: 20px;
+    padding-right: 18px;
+    padding-left: 18px;
+    color: white;
+    text-decoration: none;
+    font-family: Jost;
+}
+.cajaSoporte a:hover{
+    background-color: white;
+    color: black;
+
+}
+/* FIN AREA DE SOPORTE  Y ACERCA DE*/
+/* ACERCA DE */
+.cajaAcercaDe h3{
+    background-color: rgb(228, 228, 228);
+    padding: 7px;
+    color: black;
+    font-family: 'Jost';
+    font-size: 14px;
+}
+/* */
+/* */
+@media(max-width: 1330px){
+    .caja2 .imagen{
+        background-size: 50%;
+    }
+}
+@media(max-width: 1190px){
+    .caja2 .imagen{
+        background-size: 100%;
+    }
+    .imagen h2{
+        text-shadow: 1.5px 1px 1px black;
+    }
+    .imagen h4{
+        background-color: rgba(0, 0, 0, 0.4) ;
+        padding: 5px;
+        width: 90%;
+        font-size: 11px;
+    }
+}
+@media(max-width: 970px) {
+    .imagen h2{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 810px) {
+    .caja1{
+        position: static;
+    }
+    .encabezado{
+        width: 100%;
+        animation: none;
+        display: block;
+        text-align: center;
+        height: 90px;
+        border-radius: 0;
+    }
+    .caja2{
+        height: 260px;
+        margin-top: 0;
+    }
+    .encabezado img{
+        margin: 5px;
+    }
+    .encabezado nav{
+        margin: 0px;
+    }
+    .caja2 .imagen h2{
+        font-size: 20px;
+    }
+    .caja2 .imagen{
+        width: 95%;
+        animation: none;
+        margin-top: 12px;
+    }
+    #jogo3, #jogo4{
+        display: none;
+    }
+    .cajaVentas section, .cajaNuevos section{
+        width: 50%;
+    }
+    #ventas, #nuevos{
+        width: 100%;
+        margin-top: 5px;
+    }
+    .tituloGaleria{
+        width: 95%;
+        font-size: 24px;
+    }
+    .cajaVentas section h1, .cajaNuevos section h1, .cajaVentas section h4, .cajaNuevos section h4{
+        font-size: 20px;
+        font-family: Jost;
+    }
+    .cajaSoporte section{
+        width: 85%;
+    }
+    .cajaAcercaDe section{
+        width: 85%;
+        text-align: justify;
+    }
+    #soporte a{
+        display: flex;
+        padding: 4px;
+        padding-left: 15px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-family: 'Jost';
+    }
+    .pie{
+        border-radius: 0;
+        width: 100%;
+    }
+    .pie footer{
+        width: 90%;
+    }
+    .pie footer h2{
+        line-height: 18px;
+    }
+    .plus{
+        display: none;
+    }
+    .hrGalerias{
+        display: flex;
+    }
+}
+/*@media(max-width: 770px){
+}*/
+@media(max-width: 650px){
+    .imagen h4{
+        width: 80%;
+    }
+}
+@media(max-width: 485px){
+}
+@media(max-width: 450px){
+    .cajaVentas section h1, .cajaNuevos section h1, .cajaVentas section h4, .cajaNuevos section h4{
+        font-size: 18px;
+    }
+    .imagen h2{
+        margin: 18px;
+        margin-bottom: 12px;
+    }
+    .imagen hr{
+        display: none;
+    }
+    .imagen h4{
+        margin-left: 18px;
+    }
+
+    .imagen .imgComprar h5{
+        margin-top: 20px;
+        margin-left: 18px;
+        font-size: 18px;
+    }
+    .imagen .imgComprar a{
+        margin-top: 20px;
+        font-size: 13px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media(max-width: 370px){
+    .cajaVentas section h1, .cajaNuevos section h1, .cajaVentas section h4, .cajaNuevos section h4{
+        font-size: 14px;
+    }
+    .imagen img{
+        display: none;
+    }
+}
+@media(max-width: 340px){
+    .caja2 .imagen h2{
+        font-size: 15px;
+        margin: 20px;
+    }
+}
